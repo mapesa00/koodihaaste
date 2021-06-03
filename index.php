@@ -100,12 +100,9 @@ if(isset($_GET['auto1'])) $auto1=$_GET['auto1']; else $auto1='';
             echo (' Perillä oltiin '.sekunnitAjaksiKertoen($aikaErotus).' nopeammin.');
             echo ('</div>');
           }else{
-            echo ('Autojen kulutus on '.round($litrat1,2).' litraa.<br> Aikaa matkaan meni '.sekunnitAjaksiKertoen($aika1).'.');
-            ?>
-            <div class="alert alert-primary" role="alert">
-              Valitsit saman nopeuden autoille!<br>Valinnoilla ei synny kulutus- tai aikaeroa matkalle!
-            </div>
-            <?php
+            echo ('<div class="alert alert-primary" role="alert">');
+            echo ('Autojen kulutus on '.round($litrat1,2).' litraa.<br> Aikaa matkaan meni '.sekunnitAjaksiKertoen($aika1).'. ');
+            echo ('Valitsit saman nopeuden autoille!<br>Valinnoilla ei synny kulutus- tai aikaeroa matkalle!</div>');
           }
         }else{
           ?>
