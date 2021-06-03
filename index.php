@@ -44,9 +44,9 @@ if(isset($_GET['auto1'])) $auto1=$_GET['auto1']; else $auto1='';
       <label for="auto1">Valitse auto:</label>
         <select class="form-group" name="auto1">
             <option value=''>--Valitse auto--</option>
-            <option value="3"<?php if($auto1==3) echo ' selected'?>>Auto A: Kulutus 3l/100km/h</option>
-            <option value="3.5"<?php if($auto1==3.5) echo ' selected'?>>Auto B: Kulutus 3.5l/100km/h</option>
-            <option value="4"<?php if($auto1==4) echo ' selected'?>>Auto C: Kulutus 4l/100km/h</option>
+            <option value="3"<?php if($auto1==3) echo ' selected'?>>Auto A: Kulutus 3l/100km @1km/h</option>
+            <option value="3.5"<?php if($auto1==3.5) echo ' selected'?>>Auto B: Kulutus 3.5l/100km @1km/h</option>
+            <option value="4"<?php if($auto1==4) echo ' selected'?>>Auto C: Kulutus 4l/100km @1km/h</option>
         </select>
         
         <div class="form-group">
